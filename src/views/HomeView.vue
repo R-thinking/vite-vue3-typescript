@@ -133,6 +133,12 @@ function constFunc<T extends number>(arg: T[]): T[] {
 const arg1 = genFunc<number>([1, 2, 4, 6]);
 const arg2 = genFunc<string>(["hello", "world", "generic", "function"]);
 constFunc<number>([20, 13, 42]);
+
+/* tuple */
+function tuple(...x: [number, string]) {
+  console.log(x);
+}
+tuple(111, "222");
 </script>
 
 <template>
